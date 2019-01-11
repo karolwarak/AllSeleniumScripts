@@ -24,7 +24,11 @@ public class DynamicDropdown {
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//a[@value='MAA'])[2]"))));
 
         // used index because xpath found 2 matching nodes on page. I need only second one
-        driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+
+        //driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+
+        // replace xpath using index for xpath with parent child relationship
+        driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR']//a[@value='MAA']")).click();
 
     }
 }

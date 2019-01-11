@@ -20,11 +20,12 @@ public class StaticDropdown {
         // Select is special class for handling static dropdown menu (with html select tag)
         // apply all methods from Select class for found dropdown menu
 
+        // in tab Flights reservation tab menu
         Select reservationClassesMenu = new Select(driver.findElement(By.xpath("//select[@name='cabinclass']")));
 
-        //reservationClassesMenu.selectByValue("business"); // select with attribute value="business"
+        reservationClassesMenu.selectByValue("business"); // select with attribute value="business"
 
-        //reservationClassesMenu.selectByIndex(3); // select third value form menu counting from 0
+        reservationClassesMenu.selectByIndex(3); // select third value form menu counting from 0
 
         reservationClassesMenu.selectByVisibleText("Business");
 

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9af4f29e-41fc-4968-ae9e-15067b4879f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_4_AutoSuggestiveDropdownMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicDropdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3_DynamicDropdownMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberOfPeopleHotelMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3a_SelectNumberOfPeopleHotelTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartupWithSelenium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_StartupWithSelenium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StaticDropdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2_StaticDropdownMenu.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,39 +20,40 @@
     <session id="1544674475">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="4" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="55" />
+          <entry key="dummy" value="91" />
           <entry key="gitignore" value="65" />
-          <entry key="java" value="3732" />
+          <entry key="java" value="4439" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3732" />
-          <entry key="PLAIN_TEXT" value="120" />
+          <entry key="JAVA" value="4439" />
+          <entry key="PLAIN_TEXT" value="156" />
         </counts>
       </usages-collector>
     </session>
@@ -56,7 +61,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StartupWithSelenium.java">
+        <entry file="file://$PROJECT_DIR$/src/_1_StartupWithSelenium.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -68,22 +73,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StaticDropdown.java">
+        <entry file="file://$PROJECT_DIR$/src/_2_StaticDropdownMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DynamicDropdown.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+            <state relative-caret-position="266">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,10 +85,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NumberOfPeopleHotelMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/_3_DynamicDropdownMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="13" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="13" />
+            <state relative-caret-position="286">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_4_AutoSuggestiveDropdownMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="21" column="116" lean-forward="true" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/WebElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="171" column="17" lean-forward="true" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="79" column="32" lean-forward="true" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/Keys.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_3a_SelectNumberOfPeopleHotelTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,6 +185,10 @@
         <option value="$PROJECT_DIR$/src/NumberOfPeopleHotelMenu.java" />
         <option value="$PROJECT_DIR$/src/StaticDropdown.java" />
         <option value="$PROJECT_DIR$/src/DynamicDropdown.java" />
+        <option value="$PROJECT_DIR$/src/SelectNumberOfPeopleHotelMenu.java" />
+        <option value="$PROJECT_DIR$/src/_3a_SelectNumberOfPeopleHotelTab.java" />
+        <option value="$PROJECT_DIR$/src/_3_DynamicDropdownMenu.java" />
+        <option value="$PROJECT_DIR$/src/_4_AutoSuggestiveDropdownMenu.java" />
       </list>
     </option>
   </component>
@@ -156,7 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,11 +222,11 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547239331902" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547493089203" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -197,47 +245,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DynamicDropdown">
-    <configuration name="DynamicDropdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DynamicDropdown" />
+  <component name="RunManager" selected="Application._4_AutoSuggestiveDropdownMenu">
+    <configuration name="_1_StartupWithSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_StartupWithSelenium" />
       <module name="SeleniumScripts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfPeopleHotelMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NumberOfPeopleHotelMenu" />
+    <configuration name="_2_StaticDropdownMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_StaticDropdownMenu" />
       <module name="SeleniumScripts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StartupWithSelenium" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StartupWithSelenium" />
+    <configuration name="_3_DynamicDropdownMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_3_DynamicDropdownMenu" />
       <module name="SeleniumScripts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticDropdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StaticDropdown" />
+    <configuration name="_3a_SelectNumberOfPeopleHotelTab" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_3a_SelectNumberOfPeopleHotelTab" />
+      <module name="SeleniumScripts" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_4_AutoSuggestiveDropdownMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_4_AutoSuggestiveDropdownMenu" />
       <module name="SeleniumScripts" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.StartupWithSelenium" />
-      <item itemvalue="Application.StaticDropdown" />
-      <item itemvalue="Application.NumberOfPeopleHotelMenu" />
-      <item itemvalue="Application.DynamicDropdown" />
+      <item itemvalue="Application._1_StartupWithSelenium" />
+      <item itemvalue="Application._2_StaticDropdownMenu" />
+      <item itemvalue="Application._3a_SelectNumberOfPeopleHotelTab" />
+      <item itemvalue="Application._3_DynamicDropdownMenu" />
+      <item itemvalue="Application._4_AutoSuggestiveDropdownMenu" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DynamicDropdown" />
-        <item itemvalue="Application.NumberOfPeopleHotelMenu" />
-        <item itemvalue="Application.StaticDropdown" />
-        <item itemvalue="Application.StartupWithSelenium" />
+        <item itemvalue="Application._4_AutoSuggestiveDropdownMenu" />
+        <item itemvalue="Application._3_DynamicDropdownMenu" />
+        <item itemvalue="Application._3a_SelectNumberOfPeopleHotelTab" />
+        <item itemvalue="Application._2_StaticDropdownMenu" />
+        <item itemvalue="Application._1_StartupWithSelenium" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +324,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26065302" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26342005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -277,13 +334,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997233" visible="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32900432" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4997233" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4997233" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002767" side_tool="true" weight="0.32900432" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -306,7 +363,14 @@
     <entry file="file://$PROJECT_DIR$/SeleniumScripts.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StartupWithSelenium.java">
+    <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/Keys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_StartupWithSelenium.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -316,30 +380,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StaticDropdown.java">
+    <entry file="file://$PROJECT_DIR$/src/_2_StaticDropdownMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NumberOfPeopleHotelMenu.java">
+    <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/support/ui/ExpectedConditions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="13" />
+        <state relative-caret-position="528">
+          <caret line="79" column="32" lean-forward="true" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_3a_SelectNumberOfPeopleHotelTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DynamicDropdown.java">
+    <entry file="jar://$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="528">
+          <caret line="171" column="17" lean-forward="true" selection-start-line="171" selection-start-column="17" selection-end-line="171" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_3_DynamicDropdownMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_4_AutoSuggestiveDropdownMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="21" column="116" lean-forward="true" selection-start-line="21" selection-start-column="116" selection-end-line="21" selection-end-column="116" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DynamicDropdown {
+public class _3_DynamicDropdownMenu {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -20,7 +20,7 @@ public class DynamicDropdown {
         // and it fill both *from and *to box
         // that is NOT how normally user fill this box
 
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//a[@value='MAA'])[2]"))));
 
         // used index because xpath found 2 matching nodes on page. I need only second one

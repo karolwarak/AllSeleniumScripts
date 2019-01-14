@@ -17,7 +17,7 @@ public class _1_StartupWithSelenium {
 
         // invoke .exe file first
 
-        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
 
         // 1. download selenium client version for java from
         // 2. https://www.seleniumhq.org/download/
@@ -52,9 +52,5 @@ public class _1_StartupWithSelenium {
         driver.close(); // close current browser
 
         driver.quit(); // close all browsers opened by selenium script
-
-
-
-
     }
 }

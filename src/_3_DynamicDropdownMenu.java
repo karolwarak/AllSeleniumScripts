@@ -8,7 +8,7 @@ public class _3_DynamicDropdownMenu {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.spicejet.com/");
         driver.manage().window().maximize();
@@ -29,6 +29,5 @@ public class _3_DynamicDropdownMenu {
 
         // replace xpath using index for xpath with parent child relationship
         driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR']//a[@value='MAA']")).click();
-
     }
 }

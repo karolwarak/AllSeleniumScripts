@@ -7,7 +7,7 @@ public class _2_StaticDropdownMenu {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
 
         WebDriver driver = new ChromeDriver();
 
@@ -30,6 +30,5 @@ public class _2_StaticDropdownMenu {
         reservationClassesMenu.selectByVisibleText("Business");
 
         // deselect() methods are useful when menu have multiple options to select and I want to deselect some option(s)
-
     }
 }

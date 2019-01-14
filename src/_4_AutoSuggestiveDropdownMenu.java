@@ -10,7 +10,7 @@ public class _4_AutoSuggestiveDropdownMenu {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.makemytrip.com/");
         driver.manage().window().maximize();

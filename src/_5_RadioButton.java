@@ -20,5 +20,15 @@ public class _5_RadioButton {
             // click all radio buttons one by one
             driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).click();
         }
+
+        driver.findElement(By.id("MultiCityModelAlert")).click(); // close information window
+
+        // get value from specific attribute one by one
+        for(int i=0; i<count; i++){
+            String radioButtonValue = driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).getAttribute("value");
+            if(radioButtonValue.equals("OneWay")){
+                driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).click();
+            }
+        }
     }
 }

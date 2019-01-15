@@ -32,6 +32,7 @@ public class _7_CheckBox_And_Assertions {
         assertTrue("Checkbox is not selected", familyAndFriendsCheckbox.isSelected());
 
         int numberOfCheckboxes = driver.findElements(By.xpath("//input[contains(@name, 'ctl00$mainContent$chk_')]")).size();
-        assertThat(6).as("There is no 6 checkbox on web page").isEqualTo(numberOfCheckboxes);
+        assertThat(numberOfCheckboxes).as("There is no 6 checkboxes on the web page").isEqualTo(5);
+        // assertThat(actual - what is on site = what selenium script is return !!!).isEqualTo(expected - what should be on site);
     }
 }

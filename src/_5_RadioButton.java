@@ -14,7 +14,11 @@ public class _5_RadioButton {
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
 
         // handling radiobutton when I don't have exact locator
-        System.out.println(driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).size()); // count how many inputs (radio buttons) are with this name
+        int count = driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).size(); // count how many inputs (radio buttons) are with this name
 
+        for(int i=0; i<count; i++){
+            // click all radio buttons one by one
+            driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).click();
+        }
     }
 }

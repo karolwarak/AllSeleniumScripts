@@ -23,7 +23,7 @@ public class _9_End2End {
 
         WebElement oneWayRadiobutton = driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0"));
 
-        if(!(oneWayRadiobutton.isSelected())) {
+        if (!(oneWayRadiobutton.isSelected())) {
             oneWayRadiobutton.click();
         }
 
@@ -43,7 +43,7 @@ public class _9_End2End {
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
 
         //check if calendar field *RETURN DATE is disable
-        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")){
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5")) {
             System.out.println("Element is disable from UI perspective");
             assertTrue(true);
         } else {
@@ -61,7 +61,7 @@ public class _9_End2End {
 
         driver.findElement(By.id("hrefIncAdt")).click();
 
-        for(int i=0; i<2; i++) {
+        for (int i = 0; i < 2; i++) {
             driver.findElement(By.id("hrefIncChd")).click();
         }
 
@@ -73,7 +73,7 @@ public class _9_End2End {
         currencyDropdownMenu.selectByValue("USD");
 
         WebElement familyAndFriendsCheckbox = driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily"));
-        if(!(familyAndFriendsCheckbox.isSelected())){
+        if (!(familyAndFriendsCheckbox.isSelected())) {
             familyAndFriendsCheckbox.click();
         }
 

@@ -16,7 +16,7 @@ public class _5_RadioButton {
         // handling radiobutton when I don't have exact locator
         int count = driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).size(); // count how many inputs (radio buttons) are with this name
 
-        for(int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             // click all radio buttons one by one
             driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).click();
         }
@@ -24,9 +24,9 @@ public class _5_RadioButton {
         driver.findElement(By.id("MultiCityModelAlert")).click(); // close information window
 
         // get value from specific attribute one by one
-        for(int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             String radioButtonValue = driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).getAttribute("value");
-            if(radioButtonValue.equals("OneWay")){
+            if (radioButtonValue.equals("OneWay")) {
                 driver.findElements(By.xpath("//input[@name='ctl00$mainContent$rbtnl_Trip']")).get(i).click();
             }
         }

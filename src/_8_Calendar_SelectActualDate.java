@@ -25,7 +25,7 @@ public class _8_Calendar_SelectActualDate {
         System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 
         // validation on attribute level to see if the element state is change or not
-        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1")){
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("1")) {
             System.out.println("Element is enabled from UI perspective");
         } else {
             System.out.println("Element is disable from UI perspective");

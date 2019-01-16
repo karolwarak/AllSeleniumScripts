@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _8_Calendar {
+public class _8_Calendar_SelectActualDate {
 
     public static void main(String[] args) {
 

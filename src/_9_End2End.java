@@ -30,7 +30,7 @@ public class _9_End2End {
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
         driver.findElement(By.xpath("//a[@value='BLR']")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//a[@value='MAA'])[2]"))));
 
         driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR']//a[@value='MAA']")).click();
@@ -78,6 +78,8 @@ public class _9_End2End {
         }
 
         driver.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='OneWay']")));
 
         WebElement tripLabelOneWay = driver.findElement(By.xpath("//span[text()='OneWay']"));
         assertThat(tripLabelOneWay.getText()).as("Departure Flight web page does not open").isEqualTo("OneWay");

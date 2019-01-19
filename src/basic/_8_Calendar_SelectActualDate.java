@@ -1,3 +1,5 @@
+package basic;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,7 +35,7 @@ public class _8_Calendar_SelectActualDate {
 
         driver.findElement(By.id("ctl00_mainContent_view_date1")).click();
 
-        // select current date, it have 2 classes more which easy identify it
+        // select current date, it have 2 classes more (because it has different color) which easy identify it
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
     }
 }

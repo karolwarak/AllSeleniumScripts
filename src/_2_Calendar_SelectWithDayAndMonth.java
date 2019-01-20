@@ -14,10 +14,12 @@ public class _2_Calendar_SelectWithDayAndMonth {
         driver.get("https://www.path2usa.com/travel-companions");
         driver.manage().window().maximize();
 
-        //select January 29
+        //select April 6
 
         driver.findElement(By.id("travel_date")).click();
 
+        // search for wright month according to text that have web element
+        // write most generic locator for the label where is word with month
         while(!(driver.findElement(By.xpath("//div[@class='datepicker-days']//th[@class='datepicker-switch']"))).getText().contains("April 2019")){
                 driver.findElement(By.xpath("//div[@class='datepicker-days']//th[@class='prev']")).click();
         }

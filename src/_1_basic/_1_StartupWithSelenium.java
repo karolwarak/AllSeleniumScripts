@@ -1,4 +1,4 @@
-package basic;// all classes with .selenium are loaded from jars
+package _1_basic;// all classes with .selenium are loaded from jars
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

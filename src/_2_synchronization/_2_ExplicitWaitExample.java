@@ -1,26 +1,26 @@
-package synchronization;
+package _2_synchronization;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class _1_ImplicitWaitExample {
+public class _2_ExplicitWaitExample {
 
     public static void main(String[] args) {
-
 
         System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://alaskatrips.poweredbygps.com/");
         driver.manage().window().maximize();
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        // if element is displayed before 3 seconds it will continue execution
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
         driver.findElement(By.xpath("//label[@for='hotel-car-package-type-hp-package']")).click();
         WebElement goingToField = driver.findElement(By.xpath("//input[@id='hotel-destination-hp-package']"));
@@ -52,6 +52,20 @@ public class _1_ImplicitWaitExample {
         driver.findElement(By.id("package-hc-returning-hp-package")).sendKeys(Keys.ENTER);
 
         driver.findElement(By.xpath("//a[contains(@href, 'ttla=JFK&toDate')]")).click();
+
+        //explicit wait
+        WebDriverWait waitingForPageWithHotels = new WebDriverWait(driver, 15);
+
+        // all depends on what condition I will pass to my test
+        //waitingForPageWithHotels.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@target='41864']")));
+        // waiting for element on new page - like positive scenario
+
+        //waitingForPageWithHotels.until(ExpectedConditions.invisibilityOfElementLocated(By.id("tva-li-1-text")));
+        // waiting for element on loading page to disappear from page - like negative scenario
+
+        waitingForPageWithHotels.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@target='41864']")));
+        // wait for a specific element until you can click on it
+        // it can be on the page you are waiting to be load
 
         driver.findElement(By.xpath("//a[@target='41864']")).click();
     }

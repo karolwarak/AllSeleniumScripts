@@ -53,13 +53,12 @@ public class _2_ExplicitWaitExample {
 
         driver.findElement(By.xpath("//a[contains(@href, 'ttla=JFK&toDate')]")).click();
 
-        //explicit wait ?? - IT WORKS MORE LIKE FLUENT WAIT // IT HAS LOGIC
+        //explicit wait
         WebDriverWait waitingForPageWithHotels = new WebDriverWait(driver, 15);
 
         // all depends on what condition I will pass to my test
         //waitingForPageWithHotels.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@target='41864']")));
         // waiting for element on new page - like positive scenario
-
 
         //waitingForPageWithHotels.until(ExpectedConditions.invisibilityOfElementLocated(By.id("tva-li-1-text")));
         // waiting for element on loading page to disappear from page - like negative scenario

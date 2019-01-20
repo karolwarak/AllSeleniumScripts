@@ -1,6 +1,7 @@
 package _3_action_class_and_ajax;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,11 +17,12 @@ public class _2_MouseCompositeInteractions {
         driver.manage().window().maximize();
 
         Actions pointer = new Actions(driver); // pass the driver as argument so driver will have capabilities of Actions class methods
-
         WebElement accountAndListsElement = driver.findElement(By.cssSelector("#nav-link-accountList"));
 
-        pointer.moveToElement(accountAndListsElement).build().perform();
+        // composite interactions -> exactly the same steps that user have to do to type sth in search tab
+        pointer.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
 
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("hello");
+        pointer.moveToElement(accountAndListsElement).contextClick().build().perform();
+        // contextClick() - right click of mouse
     }
 }

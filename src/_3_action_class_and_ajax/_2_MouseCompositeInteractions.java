@@ -19,7 +19,7 @@ public class _2_MouseCompositeInteractions {
         Actions pointer = new Actions(driver); // pass the driver as argument so driver will have capabilities of Actions class methods
         WebElement accountAndListsElement = driver.findElement(By.cssSelector("#nav-link-accountList"));
 
-        // composite interactions -> exactly the same steps that user have to do to type sth in search tab
+        // composite interactions -> exactly the same steps that user have to do to type sth in search bar
         pointer.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
 
         pointer.moveToElement(accountAndListsElement).contextClick().build().perform();

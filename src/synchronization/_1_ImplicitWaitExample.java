@@ -10,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class _1_FirstSynchronizationScript {
+public class _1_ImplicitWaitExample {
 
     public static void main(String[] args) {
 
@@ -31,7 +31,7 @@ public class _1_FirstSynchronizationScript {
 
         driver.findElement(By.id("package-hc-departing-hp-package")).click();
 
-        while(!(driver.findElement(By.className("datepicker-cal-month-header"))).getText().contains("May 2019")){
+        while (!(driver.findElement(By.className("datepicker-cal-month-header"))).getText().contains("May 2019")) {
             driver.findElement(By.cssSelector(".datepicker-paging.datepicker-next.btn-paging.btn-secondary.next")).click();
         }
 

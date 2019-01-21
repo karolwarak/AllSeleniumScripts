@@ -1,4 +1,4 @@
-package _3_action_class_and_ajax;
+package _3_action_class_ajax_iframe;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

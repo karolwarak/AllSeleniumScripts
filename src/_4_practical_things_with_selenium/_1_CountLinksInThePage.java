@@ -7,6 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
 
 public class _1_CountLinksInThePage {
 
@@ -28,7 +32,7 @@ public class _1_CountLinksInThePage {
         // footerDriver acts like a driver but only for footer section
         System.out.println(footerDriver.findElements(By.tagName("a")).size());
 
-        //limited section of footerDriver
+        //limited section of footerDriver to only 6 links in this footer
         WebElement footerSiteLinksDriver = footerDriver.findElement(By.xpath("//ul[@class='footer-site-links']"));
 
         int numberOfFooterSiteLinks = footerSiteLinksDriver.findElements(By.tagName("a")).size();
@@ -39,12 +43,32 @@ public class _1_CountLinksInThePage {
         // generic solution -> check how many links are present and click in every link individual
 
         // open 6 links in different tabs
-        for(int i=0; i<numberOfFooterSiteLinks; i++){
+        for (int i = 0; i < numberOfFooterSiteLinks; i++) {
 
             // can click 2 keys in one time ctrl + enter (ctrl + enter = open link in a new tab)
             String ckickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
 
             footerSiteLinksDriver.findElements(By.tagName("a")).get(i).sendKeys(ckickOnLink);
         }
+
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        Set<String> allOpenWindowsIds = driver.getWindowHandles();
+
+        Iterator<String> windowId = allOpenWindowsIds.iterator();
+
+        String parentWindowId = windowId.next();
+
+        for (String allWindowsIds : allOpenWindowsIds) {
+            // if parent window is open the only need to is print title
+            if (parentWindowId.equals(allWindowsIds)){
+                System.out.println(driver.getTitle());
+            } else{
+                // if not parent window switch to enother window and get title
+                driver.switchTo().window(allWindowsIds);
+                System.out.println(driver.getTitle());
+            }
+        }
+        driver.switchTo().window(parentWindowId);
     }
 }

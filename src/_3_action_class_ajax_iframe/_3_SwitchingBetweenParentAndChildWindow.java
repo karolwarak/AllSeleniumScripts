@@ -28,16 +28,16 @@ public class _3_SwitchingBetweenParentAndChildWindow {
 
         Iterator<String> windowId = allOpenWindowsIds.iterator();
 
-        String parentId = windowId.next();
+        String parentWindowId = windowId.next();
 
-        String childId = windowId.next();
+        String childWindowId = windowId.next();
 
-        driver.switchTo().window(childId);
+        driver.switchTo().window(childWindowId);
         // now can perform all the operations on child window
 
         System.out.println(driver.getTitle()); // window switched successfully because I got different title
 
-        driver.switchTo().window(parentId);
+        driver.switchTo().window(parentWindowId);
 
         System.out.println(driver.getTitle());
 

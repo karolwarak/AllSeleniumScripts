@@ -21,6 +21,8 @@ public class _1_CountLinksInThePage {
         driver.get("https://jqueryui.com/droppable/");
         driver.manage().window().maximize();
 
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
         // every link on the page should have tag <a>
 
         // print number of all links on the page
@@ -46,20 +48,18 @@ public class _1_CountLinksInThePage {
         for (int i = 0; i < numberOfFooterSiteLinks; i++) {
 
             // can click 2 keys in one time ctrl + enter (ctrl + enter = open link in a new tab)
-            String ckickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
+            String clickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
 
-            footerSiteLinksDriver.findElements(By.tagName("a")).get(i).sendKeys(ckickOnLink);
+            footerSiteLinksDriver.findElements(By.tagName("a")).get(i).sendKeys(clickOnLink);
         }
-
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         Set<String> allOpenWindowsIds = driver.getWindowHandles();
 
         Iterator<String> windowId = allOpenWindowsIds.iterator();
 
-        String parentWindowId = windowId.next();
+        //String parentWindowId = windowId.next();
 
-        for (String allWindowsIds : allOpenWindowsIds) {
+        /*for (String allWindowsIds : allOpenWindowsIds) {
             // if parent window is open the only need to is print title
             if (parentWindowId.equals(allWindowsIds)){
                 System.out.println(driver.getTitle());
@@ -68,7 +68,14 @@ public class _1_CountLinksInThePage {
                 driver.switchTo().window(allWindowsIds);
                 System.out.println(driver.getTitle());
             }
+        }*/
+
+        while (windowId.hasNext()) {
+            // it will start from parent window
+            driver.switchTo().window(windowId.next());
+            System.out.println(driver.getTitle());
         }
-        driver.switchTo().window(parentWindowId);
+        // go back to parent window after open all tabs
+        // driver.switchTo().window(parentWindowId);
     }
 }

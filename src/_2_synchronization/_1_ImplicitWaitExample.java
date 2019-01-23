@@ -12,7 +12,6 @@ public class _1_ImplicitWaitExample {
 
     public static void main(String[] args) {
 
-
         System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://alaskatrips.poweredbygps.com/");

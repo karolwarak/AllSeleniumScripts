@@ -1,3 +1,5 @@
+package _4_practical_things_with_selenium;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -5,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.List;
 
-public class _2_Calendar_SelectWithDayAndMonth {
+public class _6_Calendar_SelectWithDayAndMonth {
 
     public static void main(String[] args) {
 

@@ -12,7 +12,7 @@ public class _3_DynamicDropdownMenu {
 
         System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.spicejet.com/");
+            driver.get("https://www.spicejet.com/");
         driver.manage().window().maximize();
 
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();

@@ -4,18 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class _1_HandlingRecaptchaConfirmation {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        /*System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
+        WebDriver driver = new ChromeDriver();*/
 
-/*      System.setProperty("webdriver.gecko.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/geckodriver-v0.23.0-linux64/geckodriver");
-        WebDriver driver = new FirefoxDriver();*/
+        System.setProperty("webdriver.gecko.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/geckodriver-v0.23.0-linux64/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+
         driver.get("https://9gag.com/");
         driver.manage().window().maximize();
 
@@ -23,22 +22,18 @@ public class _1_HandlingRecaptchaConfirmation {
         driver.findElement(By.id("jsid-signup-button")).click();
         driver.findElement(By.xpath("//a[text()='Email Address']")).click();
 
-        WebDriverWait waitingForIframe = new WebDriverWait(driver, 15);
-        waitingForIframe.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.tagName("iframe")));
+        //System.out.println(driver.findElements(By.tagName("iframe")).size());
 
         int frameNumber = findFrameNumberWithCheckboxElement(driver, By.xpath("//*[@id='recaptcha-anchor']/div[5]"));
 
-        //driver.switchTo().frame(driver.findElement(By.xpath("//iframe[contains(@src, 'google.com/recaptcha/api2')]")));
-
         driver.switchTo().frame(frameNumber);
-
-        WebDriverWait waitingForCheckbox = new WebDriverWait(driver, 10);
-        waitingForCheckbox.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='recaptcha-anchor']/div[5]")));
 
         driver.findElement(By.xpath("//*[@id='recaptcha-anchor']/div[5]")).click();
     }
 
-    // I HAVE PROBLEM WITH FINDING CHECKBOX IN CORRECT ?? (I THINK) IFRAME
+
+    // I HAVE PROBLEM WITH IFRAMES. IN THIS METHOD WHILE DEBUG LOOP I GET MESSAGE "Frames are not available"? Why ??
+    // IT LOOKS LIKE I LOST DATA
 
     public static int findFrameNumberWithCheckboxElement(WebDriver driver, By by) {
 
@@ -58,8 +53,6 @@ public class _1_HandlingRecaptchaConfirmation {
             if (countCheckboxesInFrame > 0) {
                 //driver.findElement(by).click();
                 break; // when I found earlier the element I quite the loop
-            } else {
-                driver.switchTo().defaultContent();
             }
         }
 

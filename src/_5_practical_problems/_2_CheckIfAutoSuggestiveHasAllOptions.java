@@ -5,11 +5,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
 
 public class _2_CheckIfAutoSuggestiveHasAllOptions {
 
-    public static void main(String[] args) throws InterruptedException {
+    /*end2end testcase
+    Enter the letters Beng
+    Verify if Airport option is displayed in the suggestive dropdown menu and
+    verify if number of Airport and order is correct
+    */
+
+    public static void main(String[] args) {
 
         System.setProperty("webdriver.chrome.driver", "/home/karol/ProjectsJAVA/SeleniumTraining/chromedriver_linux64/chromedriver");
         WebDriver driver = new ChromeDriver();
@@ -42,14 +47,23 @@ public class _2_CheckIfAutoSuggestiveHasAllOptions {
 
         String text = (String) js.executeScript(scriptInJavaScript);
 
+        int i = 0;
 
-        while(!text.equalsIgnoreCase("BENGALURU AIRPRT")){
+        while (!text.equalsIgnoreCase("BENGALURU AIRPRT")) {
 
             driver.findElement(By.id("fromPlaceName")).sendKeys(Keys.DOWN);
 
             text = (String) js.executeScript(scriptInJavaScript);
 
             System.out.println(text);
+
+            i++;
+
+            // to avoid infinitive loop if reading UI goes wrong
+            if (i > 6){
+                break;
+            }
         }
+        System.out.println(i);
     }
 }

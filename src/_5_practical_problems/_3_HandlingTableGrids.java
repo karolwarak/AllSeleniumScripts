@@ -23,14 +23,14 @@ public class _3_HandlingTableGrids {
         //restricts the search field to a table only
         // now it will search elements only in the table area
         // concept of subsections of elements
-        int rowCount = table.findElements(By.cssSelector("cb-col cb-col-100 cb-scrd-itms")).size();
+        int rowCount = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms']")).size();
 
-        int rowsWithNumberToAdd = table.findElements(By.cssSelector("cb-col cb-col-100 cb-scrd-itms div:nth-child(3)")).size();
+        int rowsWithNumberToAdd = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).size();
 
         for (int i = 0; i < rowsWithNumberToAdd; i++) {
 
 
-            table.findElements(By.cssSelector("cb-col cb-col-100 cb-scrd-itms div:nth-child(3)")).get(i);
+            System.out.println(table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).get(i).getText());
 
 
         }

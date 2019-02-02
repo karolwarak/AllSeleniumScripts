@@ -23,16 +23,31 @@ public class _3_HandlingTableGrids {
         //restricts the search field to a table only
         // now it will search elements only in the table area
         // concept of subsections of elements
-        int rowCount = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms']")).size();
+
+        //int rowCount = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms']")).size();
 
         int rowsWithNumberToAdd = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).size();
 
-        for (int i = 0; i < rowsWithNumberToAdd; i++) {
+        int totalSumValue = 0;
 
+        for (int i = 0; i < rowsWithNumberToAdd - 2; i++) {
 
-            System.out.println(table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).get(i).getText());
+            String value = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).get(i).getText();
+            int valueInt = Integer.parseInt(value);
+            totalSumValue += valueInt;
+        }
 
+        String extras = table.findElement(By.xpath("//div[text()='Extras']/following-sibling::div[1]")).getText();
+        int extrasValue = Integer.parseInt(extras);
+        totalSumValue += extrasValue;
 
+        String actualSum = table.findElement(By.xpath("//div[text()='Total']/following-sibling::div[1]")).getText();
+        int actualSumValue = Integer.parseInt(actualSum);
+
+        if (totalSumValue==actualSumValue) {
+            System.out.println("Wyniki sie zgadzaja");
+        } else {
+            System.out.println("Wyniki sie nie zgadzaja");
         }
     }
 }
